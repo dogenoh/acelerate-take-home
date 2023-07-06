@@ -5,7 +5,11 @@ This web application allows users to view and manage ratings and reviews for var
 ## Imporant
 
 - There is a Cloudflare bypassing issue for scraping data
+  - I've tried many different ways with Puppeteer to bypass Cloudflare
 - I can explain this in detail during our chat
+- I also get a 403 error due to missing or incorrect authentication credentials
+  - I've copied all the headers sent in the email, and it still doesn't work
+  - It doesn't work at first, but sometimes when I wait, it works 
 
 ## Technologies Used
 
