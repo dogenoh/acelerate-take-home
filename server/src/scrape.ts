@@ -22,18 +22,15 @@ export async function launchBrowserAndGetPage() {
 // Function to get the store link from the search page
 export async function getStoreLink(page: Page, restaurantName: string) {
   const url = `http://www.doordash.com/search/store/${restaurantName}?event_type=search`;
-
-  console.log('URL', url);
   await page.goto(url);
 
   const links = await page.evaluate(() =>
     Array.from(document.querySelectorAll('a'), (e) => e.href)
   );
+
   const storeLink = links.find((element) =>
     element.includes('https://www.doordash.com/store/')
   );
-
-  console.log('Links', links);
 
   return storeLink;
 }
@@ -43,6 +40,7 @@ export async function getReviewsLink(page: Page) {
   const links = await page.evaluate(() =>
     Array.from(document.querySelectorAll('a'), (e) => e.href)
   );
+  
   const reviewsLink = links.find((element) =>
     element.includes('https://www.doordash.com/reviews/store/')
   );
