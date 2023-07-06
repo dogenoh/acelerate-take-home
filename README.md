@@ -14,7 +14,7 @@ This web application allows users to view and manage ratings and reviews for var
 ## Technologies Used
 
 - Frontend: React, TypeScript, Axios, Tailwind CSS
-- Backend: Express, Node.js, Puppeteer, Prisma
+- Backend: Express, Node.js, Axios, Puppeteer, Prisma
 - Database: PostgreSQL
 - Builder/Bundler: Vite
 
