@@ -12,6 +12,7 @@ This web application allows users to view and manage ratings and reviews for var
 - Frontend: React, TypeScript, Axios, Tailwind CSS
 - Backend: Express, Node.js, Puppeteer, Prisma
 - Database: PostgreSQL
+- Builder/Bundler: Vite
 
 ## Installation
 
